@@ -35,7 +35,7 @@ h1,h2,h3,p {margin-top: 0;
     text-transform: uppercase;
 padding-top: 15px;
 padding-bottom: 36px;
-margin-right: 79px;}
+margin-right: 76px;}
 
 .first-part {color: var(--primeri-color);
     font-family: "Raleway",sans-serif;
@@ -50,7 +50,7 @@ margin-right: 79px;}
         font-weight: 500;
         line-height: 1.5;
         letter-spacing: 0.02em;
-    ;}
+        padding: 24px 0 ;}
 
         .contakts-list-ltem {font-size: 16px;
             font-weight: 400;
@@ -69,12 +69,12 @@ margin-right: 79px;}
 .page-nav-list:hover,
 .page-nav-list:focus {color: #404BBF;}
 
-.container-navigate {border-bottom: 1px solid #E7E9FC;
+.container-navigate {
     display: flex;
 justify-content: space-between;
 }
 .main-page-nav {display: flex;
-    }
+    align-items: center; }
 .page-nav {display: flex;
     gap: 40px;
 padding-top: 24px;}
@@ -82,18 +82,20 @@ padding-top: 24px;}
 gap: 40px;
 padding-top: 24px;}
 
+.main-page {border-bottom: 1px solid #E7E9FC;}
+
 /* heder styles */
 
 /* Hero image */
-.hero-image-section {background-color: var(--primeri-color);}
+.hero-image-section {background-color: var(--primeri-color);
+    padding: 188px 0;}
 
 .hero-type {color: var(--wite-color);  text-align: center;
     font-size: 56px;
         font-weight: 700;
     line-height: 1.07;
     letter-spacing: 0.02em;
-    width: 496px;
-padding-top: 188px;
+    max-width: 496px;
 margin-bottom: 48px;
 margin-right: auto;
 margin-left: auto;}
@@ -106,14 +108,17 @@ margin-left: auto;}
     letter-spacing: 0.04em;
     border-radius: 4px;
     cursor: pointer;
-padding: 16px 32px;}
+padding: 16px 32px;
+display: block;
+min-width: 169px;
+height: 56px;
+border: none;
+margin-right: auto;
+margin-left: auto;}
 
     .hero-button:hover,
     .hero-button:focus {background-color: #404BBF;}
-    .button  {margin-right: auto;
-        margin-left: auto;
-        padding-bottom: 188px;
-    max-width: max-content;}
+ 
     
 
     /* Hero image */
@@ -153,7 +158,8 @@ padding-bottom: 120px;}
 /* feuters */
 
 /* Our Team */
-.team-section {background-color: #F4F4FD;}
+.team-section {background-color: #F4F4FD;
+    padding: 120px 0 ;}
 
 .secondery-titel {color: var(--primeri-color);
     font-size: 36px;
@@ -162,23 +168,26 @@ padding-bottom: 120px;}
     letter-spacing: 0.02em;
     text-align: center;
     text-transform: capitalize;
-    padding-top: 120px;
-padding-bottom: 72px;}
+margin-bottom: 72px;}
 
 .team-list-item {background-color: #FFFFFF;
-width: calc((100% - 72px) / 4);}
+width: calc((100% - 72px) / 4);
+border-radius: 0px 0px 4px 4px;}
 
 .team-list-name {color: var(--primeri-color);
     font-size: 20px;
     font-weight: 500;
     line-height: 1.20;
-    letter-spacing: 0.02em;}
+    letter-spacing: 0.02em;
+    text-align: center;
+    margin-bottom: 8px;}
 
 .team-list-text {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
-    letter-spacing: 0.02em;} 
+    letter-spacing: 0.02em;
+    text-align: center; } 
     
 .team-list {display: flex;
 gap: 24px;
@@ -188,11 +197,12 @@ padding-bottom: 120px;}
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    column-gap: 8px;}
+    column-gap: 8px;
+    padding: 32px 0}
 
 /* Our Team */
 
-/* Portfolio dg*/
+/* Portfolio*/
 .portfolio-titel {color: var(--primeri-color);
     font-size: 20px;
     font-weight: 500;
@@ -216,14 +226,20 @@ gap: 24px;
 row-gap: 48px;
 padding-bottom: 120px;}
     
+.portfolio-section {padding-top: 120px; 
+    padding-bottom: 120px;}
 
 .portfolio-list-item {width: calc((100% - 48px) / 3);
-    border: 1px solid  #E7E9FC;
 background-color: var(--wite-color);}
+
+.text-cart {padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;}
 /* Portfolio */
 
 /* Footer */
-.the-end {background-color: var(--primeri-color);}
+.the-end {background-color: var(--primeri-color);
+    padding: 100px 0;}
 
 .secondery-logo-text {color: var(--cloud-color);
     font-family: "Raleway",sans-serif;
@@ -241,6 +257,8 @@ background-color: var(--wite-color);}
         line-height: 1.17;
         letter-spacing: 0.03em;
         text-transform: uppercase;
+        display: inline-block;
+        margin-bottom: 16px;
     }
 
         .end-text {color: var(--cloud-color);
@@ -250,5 +268,3 @@ background-color: var(--wite-color);}
             letter-spacing: 0.02em;
         padding-bottom: 100px;}
 
-.last-logo {padding-top: 100px;
-    margin-bottom: 16px;}
